@@ -1,0 +1,443 @@
+
+Proyecto Final Diseño de Aplicaciones Web
+
+
+
+
+
+
+
+
+Plataforma web para una empresa de mensajería
+
+
+Implementación de una plataforma web para la gestión cliente final y empresa franquiciada a nivel local
+
+
+
+
+
+
+
+Alberto Garre Muñoz 
+48693810G
+Índice
+	Resumen
+	Justificación del proyecto
+	Objetivos
+	Análisis del negocio
+		Resumen ejecutivo
+		Descripción del producto
+		Análisis del mercado
+		Estructura organizativa de los recursos humanos
+		Plan de marketing
+		Estados financieros previsionales a 3 años
+		Análisis DAFO
+	Desarrollo  del proyecto
+		Revisión bibliográfica, fundamentación teórica.
+		Materiales y métodos
+		Resultados y análisis
+		Conclusiones
+	Bibliografía
+
+1. Resumen
+
+CONTOSOX is a national company dedicated to the transport of light parcel. 
+It consists of a large logistics chain that can move merchandise throughout the country for further processing in the logistics centers and collection from local franchisees who are in charge of dealing with the client at the end point. Its target audience are Pymes and individual users.
+
+In this project we are going to develop a web platform within the scope of a national transport company. Due to the nature of the sector, this page must be a common access point for all potential CONTOSOX users. For this reason, although it will serve multiple small businesses, we will focus on only one. Its use is intended for the end customer and for small local transport companies franchised by the parent company. It is important to emphasize that there is a logistical dependence with the parent company that we will not be able to resolve in this project due to a lack of data, knowledge and time.  
+
+What does the new aplication have to offer?
+- As clients, we will be able to make shipments and check the state of our package. 
+- As franchisees, we will streamline the company's production processes. Pickups and deliveries will be able to be registered and updated in real time. As employees we will be able to assign the packages that we are going to distribute, we will have instant access to the entire list of packages and we are going to confirm a delivery with just a code and a click. 
+
+2.  Justificación del proyecto
+
+He escogido este proyecto por una razón básica: durante la duración de estos dos años de curso he estado trabajando en una empresa del sector de reparto. En labores de operario, repartidor y oficinista.
+
+La correcta conjugación de trabajo y estudio ha logrado que consiga finalizar este ciclo formativo.
+Es esta empresa he aprendido y desarrollado buenas características para el correcto desempeño laboral. 
+Y he descubierto posibles puntos a mejorar dentro de los protocolos operacionales de la empresa.
+
+Es por ello, que conocía antes empezar a crear la aplicación del proyecto, que elementos necesitaba, hasta donde iba a llegar y donde podía simplificar sin que la aplicación perdiese el sentido.
+
+He usado React y Javascript porque durante las practicas en empresa he aprendido un poco de estas materias y son las más usadas en el sector.
+Esto es así también con la herramienta Postman.
+
+
+3. Objetivos
+
+Queremos crear un sistema que soporte la operativa de una empresa de paquetería.
+Para ello la plataforma debe ofrecer las siguientes características:
+
+- Debe poder ser accesible desde móvil y pc.
+- Ver las tarifas que la empresa me ofrece.
+- Navegar por la página de forma sencilla.
+- El usuario puede solicitar una recogida a domicilio.
+- Seguir el estado de un envío.
+- Acceso controlado a las secciones de empleado.
+- Crear un gestor de usuarios.
+- Gestion de empleados con sus roles dentro de la empresa.
+- Cada empleado debe poder asignarse sus propias tareas.
+- Crear un sistema para asignar paquetes y confirmar entregas y recogidas.
+- Ciclo de vida del paquete con seguimiento de su estado, localización y persona responsable.
+
+4. Análisis del negocio
+
+	a) Resumen ejecutivo
+
+CONTOSOX es una empresa nacional que se dedica al transporte de paquetería ligera.
+Cuenta con una amplia cadena logística que puede mover mercancía por todo el país para su posterior procesamiento en las centrales logísticas y recogida de los franquiciados locales que se encargan del trato con el cliente en punto final.
+El papel de los franquiciados es fundamental y representa un pilar en la operativa y la gestión.
+Los motivos por los que CONTOSOX ha elegido esta forma organizativa, responden a multiples factores.
+- Delegación de la micro gestión local
+- El corporativismo reduce la eficiencia
+- Reducción de márgenes 
+- Dilución de la responsabilidad en la cadena corporativa
+- Evita incrementar la masa salarial.
+A la luz de estas características no es casual que las principales empresas del sector adopten el mismo formato organizativo no solo en España si no en el resto del mundo.
+
+Contosox orienta su esfuerzos a particulares y PYMES siendo su público objetivo y con tarifas y servicios que se amoldan a sus necesidades.
+	b) Descripción del servicio
+
+En un mundo cada vez más interconectado, el comercio digital se ha multiplicado por órdenes de magnitud en la última década. El consumidor ha pasado del recelo a comprar por internet, a la aceptación de que es más rápido, más cómodo y ofrece mayor oferta. 
+
+¿Pero, que ocurre desde que el cliente compra el producto en una página web hasta que lo recibe? 
+Ese es el papel de Contosox, participar en la cadena logística del comerció global como un socio más, prestando el mejor servicio.
+Pero no solo somos meros transportistas queremos formar parte de la cadena de valor del comercio de proximidad, acercando los productos locales a sus vecinos. 
+Queremos abrir la oferta de canales de distribución de forma que un pequeño comercio, una farmacia o un productor de naranjas ecológicas por ejemplo puedan enviar sus productos al otro lado de la peninsula de forma fácil, económica y con garantías de satisfacción de todas partes.
+Consideramos a las pymes que nos contratan como socios comerciales por compartir un mismo compromiso de mejora y éxito económico.
+Y como no, cubrimos el ámbito de la entrega a particulares, que nos tomamos muy en serio puesto que somos la última representación de la experiencia de compra. Para ello contamos con profesionales bien remunerados,  formación interna, y protocolos de optimización de recursos que nos permiten no solo garantías de entrega sino que las entregas sean en condiciones óptimas.
+
+	c) Análisis del mercado
+
+El mercado está segmentado por los vectores de precio y volumen de transporte de mercancías.
+
+Las empresas que apuestan por grandes volúmenes son Seur, Fedex y DHL
+Grandes volúmenes permiten ajustar márgenes a las empresas matrices. Pero esto lo hacen a costa de unas condiciones peores para los franquiciados. 
+Los franquiciados en estos casos son autónomos o pequeñas pymes donde muchas veces no se conoce aspectos básicos como la repercusión económica por entrega, ya que las grandes matrices firman diferentes contratos con diferentes empresas y cada uno de esos contratos se firma a un precio diferente.
+Esto genera incertidumbre, horas extra, desviación en los plazos de entrega, pérdida de material y descontento en el cliente final.
+
+En el otro extremo del mercado está el concepto contrario altos precios y bajo volumen.
+La empresa que representa este paradigma es Nacex, perteneciente a la cotizada grupo LOGISTA. Se distinguen por precios caros y garantías de entrega. Tienen unos tamaños y unos pesos máximos para cada elemento. 
+La limitación de peso y volumen así como un precio más alto ayuda a agilizar la operativa, y en última instancia redunda en un cumplimiento de sus garantías de entrega mejorando así la satisfacción del cliente.
+Otro aspecto importante es que aunque su estructura organizativa también se basa en franquiciados, estos cubren un area territorial bastante grande y para ello se obliga y se anima a contratar personal propio. Que la recomendación explícita de evitar cubrir puestos con autónomos
+
+CONTOSOX replica el modelo de servicio enfocado en la satisfaccion del cliente, con alto precio y escaso volumen, siempre con garantías de entrega.
+
+	d) Estructura organizativa de los recursos humanos
+
+Una franquicia suele ser una Pyme dependiendo de la zona con hasta 10 empleados 
+Para los cometidos que se van a desarrollar, cada franquicia necesita contar con al menos un oficinista y al menos 3 repartidores con carnet de conducir a jornada completa.
+
+La empresa matriz necesita tener a operarios a jornada partida para manipular la maquinaria de filtrado de paquetería en las centrales logísticas. La peculiaridad de este horario es que es de 20:00 a 23:00 y de 05:00 a 08:00
+La empresa matriz no solo franquicia a las oficinas de reparto. Resulve por el mismo modelo empresarial las rutas nocturnas entre plataformas logísticas.  
+Además la empresa matriz necesitará de un personal con capacitación en el sector IT como ingenieros informáticos, CF DAW o DAM para poder hacerse cargo del mantenimiento de los recursos informáticos.
+
+
+	e) Plan de marketing
+
+A continuación vamos a relatar la gama de productos que ofrece la empresaria
+
+Contosox ofrece solución completa al problema de la cadena logística, desde el punto de partida hasta su destino final en las manos del cliente. Para ello ofrece:
+
+	- Recogida en mano
+	- Transporte logístico por todo el territorio nacional
+	- Entrega en mano
+
+Los precios se han fijado segmentando por tarifas según el target donde hemos decido centrar nuestros esfuerzos. Segregando por precio, volumen físico y tamaño
+
+Tras una prospección de mercado donde se han evaluado las preferencias de los potenciales clientes los nichos los precios de cada uno de los competidores, se ha contrastado con los costes operativos y se ha llegado a la conclusión de que para nuestro mercado las tarifas más adecuados son los siguientes
+
+- Económica
+	Coste de 5€ por recogida y envío a domicilio
+	tamaño de 10x25x35cm
+	peso de hasta 5kilogramo
+	entrega garantizada antes de 48 horas
+
+- Hogar
+	Coste de 15€ por recogida y envío a domicilio
+	tamaño de 50x50x50cm
+	peso de hasta 7kilogramos
+	entrega garantizada antes de 48 horas
+
+- Profesional
+	Coste de 50€ por recogida y envío a domicilio
+	tamaño de 100x100x100cm
+	peso de hasta 35kilogramos
+	entrega garantizada antes de 48 horas
+
+Nos diferenciamos de nuestros competidores por incluir en el precio el servicio de recogida, siendo este un coste marginal en el que podemos incurrir sin mayor problema.
+
+Los margenes en la tarifa económica están ligeramente por encima del precio de coste con el objetivo de lograr una mayor penetración entre nuestros clientes. 
+Nuestra mejor publicidad es la satisfacción de nuestros clientes
+En el rango más alto de nuestras tarifas estamos muy por encima de otros competidores por volumen y nos quedamos en el rango de los transportistas de calidad.
+Esta tarifa esta pensada para pymes y profesionales especializados y transporte de aparatos de diagnóstico, aparatos médicos y veterinarios, aparatos de medición y ensayos no destructivos.
+
+CONTOSOX ha elegido no anunciarse en los medios tradicionales de propaganda principalmente por no incurrir en gastos adicionales. Contosox cuenta con una masa de clientes habituales que crecen de acuerdo al crecimiento orgánico propio del sector. Es por ello que como estrategia defensiva en un entorno de inflación de costes y alta competitividad se ha decidido que esa partida de gasto se destine a mejorar protocolos de eficiencia interna.
+
+	f) Estados financieros previsionales a 3 años
+
+En base a los resultado de 2021 preveremos que los pedidos aumenten de acuerdo al crecimiento orgánico del sector de un 5% anual que corresponde con la tasa de inflación prevista también de un 5%
+
+
+	
+
+
+
+
+
+
+A continuación mostraremos la previsión de de estados de ingresos y gastos en una coyuntura estable donde la inflación se mantiene estable como actualmente entre el 2% y el 5%.
+Los tipos de interés se mantendrán bajos y estables por lo que la inflación seguirá creciendo pero los costes de la deuda seguirán siendo bajos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+g) Análisis DAFO
+
+
+Aspectos negativos
+Aspectos positivos
+
+
+Origen interno
+Debilidades
+- Dependencia de transporte industrial cada vez más caro de mantener en una coyuntura donde la legislación esta volviéndose más restrictiva
+Fortalezas
+- Atención al cliente 
+- Alta retención de clientela
+- Precios competitivos
+- Garantías de entrega
+- Confianza y seguridad
+- Buenas valoraciones de los usuarios
+Origen externo
+Amenazas
+- Fuga de la mano de obra a empresas con remuneraciones más altas
+- Competencia en el sector con dos polos precio y volumen.
+Oportunidades
+- Sector en crecimiento
+- Nuevas necesidades de la población
+- Entregas en armarios tipo “Amazon”
+- Subvenciones al vehículo eléctrico industrial
+- Reducir tiempos de entrega
+
+5.  Desarrollo  del proyecto
+
+	a) Revisión bibliográfica, fundamentación teórica.
+Modelo cliente servidor
+
+El modelo cliente-servidor describe cómo un servidor proporciona recursos y servicios a uno o más clientes. Los ejemplos de servidores incluyen servidores web, servidores de correo y servidores de archivos. 
+Cada uno de estos servidores proporciona recursos a los dispositivos del cliente, como computadoras de escritorio, portátiles, tabletas y teléfonos inteligentes. 
+
+La mayoría de los servidores tienen una relación de uno a varios con los clientes, lo que significa que un solo servidor puede proporcionar recursos a varios clientes a la vez. 
+Cuando un cliente solicita una conexión a un servidor, el servidor puede aceptar o rechazar la conexión. Si se acepta la conexión, el servidor establece y mantiene una conexión con el cliente a través de un protocolo específico. 
+
+Por ejemplo, un cliente de correo electrónico puede solicitar una conexión SMTP a un servidor de correo para enviar un mensaje. La aplicación SMTP en el servidor de correo solicitará autenticación del cliente, como la dirección de correo electrónico y la contraseña. Si estas credenciales coinciden con una cuenta en el servidor de correo, el servidor enviará el correo electrónico al destinatario previsto. 
+
+Los servicios en línea populares distribuyen a los clientes a través de múltiples servidores físicos, utilizando una técnica llamada computación distribuida. En la mayoría de los casos, no importa a qué máquina específica estén conectados los usuarios, ya que todos los servidores brindan el mismo servicio. 
+
+
+Front end Estilos css con BootStrap
+Bootstrap es un framework CSS muy popular en el campo del desarrollo web. 
+Entre sus cualidades y beneficios están
+    • Ahorra tiempo: en poco tiempo puede desarrollar cualquier aplicación web. No puede escribir ningún código CSS en la hoja de estilo. 
+
+    • Personalizable: Un gran aspecto de Bootstrap es que puede personalizarlo. Puede sentarse y hurgar en todo el marco y conservar lo que necesita y deshacerse de lo que no. El objetivo de Bootstrap es que le permite tener en cuenta sus propias necesidades y adaptar su proyecto de desarrollo en consecuencia. Esta es la razón principal por la que muchos desarrolladores sienten que algunas herramientas son completamente inútiles en Bootstrap, mientras que otros reverencian lo mismo. 
+      
+    • Coherencia: una de las principales razones por las que se desarrolló este conjunto de herramientas fue porque Twitter estaba viendo grandes inconsistencias entre los desarrolladores que trabajaban en sus proyectos. Esto causó algunos problemas tanto en el frente del desarrollo como en el frente del usuario final. Dado que funciona con un conjunto central de código de desarrollo, los resultados de Bootstrap son uniformes en todas las plataformas. Verá lo mismo en Internet Explorer, Chrome y Firefox.
+      
+    •  Responsive: Bootstrap es totalmente sensible. Si cambia de una computadora portátil a un iPad y de un iPad a una Mac, no tendrá que preocuparse por su trabajo. 
+
+    •  Soporte: Bootstrap tiene una gran comunidad de soporte detrás, por lo que generalmente puede obtener ayuda cuando se encuentra con problemas. Además, Bootstrap en sí se actualiza continuamente y los creadores han sido muy buenos para publicar actualizaciones oportunas. 
+
+Front-End con React
+
+React de JavaScript es una biblioteca para construir interfaces.
+React funciona en el cliente como un SPA (Single Page App), pero puede ser usado para construir aplicaciones Full Stack comunicándose con un servidor o API.
+
+React es frecuentemente referida como un framework de front end porque es capaz y directamente comparable a otros frameworks como Angular o Vue. Fue creada y es mantenida por Facebook.
+
+React no se puede comunicar con una base de datos por ello suele usarse en combinación con otras tecnologías para crear una aplicación Full Stack. 
+En nuestro caso hemos usado un servidor de JsonServer y PHP Laravel en el BackEnd para crear las APIs
+React carece de routes por eso tenemos que instalar un paquete extra que se llama react-router-dom.
+
+¿Porque usar react?
+React nos da una estructura para el “view” layer de nuestra aplicación.
+MVC es un diseño popular en software.
+El modelo trata los datos, el controller trata con las request y el routing, y el view es el UI(User Interface) lo que se muestra al usuario. React es la V del modelo MVC.
+
+Una de las grandes ventajas es el concepto de Componentes reutilizables que pueden tener su propio estado y datos. React usa JSX o JavaScript Sintax Extension que nos permite escribir HTML dinámico. De hecho es JavaScript pero está formateado como HTML.
+Las UI creadas son muy interactivas porque React utiliza el Virtual DOM que es el “Document Object Model” que permite actualizar partes de la pagina que necesitan ser actualizadas sin recargar la página.
+
+Una caracteristica de react es el concepto de componente.
+
+¿Que es la reutilización de software y porqué es interesante?
+
+Una definición de reutilización de software podría ser el proceso de creación de sistemas de software a partir de componentes de software predefinidos. 
+Unas características de la reutilización del software son : 
+    • El desarrollo sistemático de componentes reutilizables. 
+    • La reutilización sistemática de estos componentes como bloques de construcción para crear nuevos sistemas. 
+
+Un componente reutilizable puede ser el código, pero los mayores beneficios de la reutilización provienen de una visión más amplia y de mayor nivel de lo que se puede reutilizar. Las especificaciones de software, los diseños, los casos de prueba, los datos, los prototipos, los planos, la documentación, los marcos y las plantillas son todos candidatos para su reutilización. La reutilización de software puede reducir el tiempo y los costos de desarrollo de software. 
+
+Las principales ventajas de la reutilización de software son: 
+    • Aumento la productividad del software. 
+    • Reducción en el tiempo de desarrollo de software. 
+    • Mejora de la interoperabilidad del sistema de software. 
+    • Desarrollo de software con menos gente. 
+    • Muevilidad de personal más fácilmente de un proyecto a otro. 
+    • Reducir los costos de desarrollo y mantenimiento de software. 
+    • Produzcir software más estandarizado. 
+    • Produzcir software de mejor calidad y proporcione una poderosa ventaja competitiva. 
+
+
+Mi backened es PHP Laravel y tiene la lógica de negocio ,el “Business Intelligence“.
+
+Hay diferentes frameworks para construir robustas aplicaciones web pero Laravel retiene la posición numero uno por su flexibilidad que proporciona a los desarroladores.
+
+Laravel es un framework de desarrollo de aplicaciones web con una sintaxis que hace que todo el proceso de desarrollo web sea rápido, fácil y agradable para los desarrolladores al eliminar todos los puntos débiles asociados con el manejo de código PHP complejo. 
+Facilita algunas de las tareas comúnmente ejecutadas como routing , autenticación, sesiones, almacenamiento en caché y entre otras,  para que los desarrolladores puedan concentrarse en crear funciones de la aplicación relacionadas con el negocio. 
+El framework Laravel fue creado por Taylor Otwell con la única intención de ayudar a los desarrolladores de sitios web a hacer que la codificación compleja sea simple, más rápida y mejor. 
+Entre los beneficios de usar Laravel tenemos:
+
+    • Eloquent ORM (object-relational-mapping)
+	Eloquent ORM en Laravel proporciona a los desarrolladores web una implementación simple de 	ActiveRecord que hace que su interacción con las bases de datos sea fácil y requiera menos tiempo. 	Les permite escribir consultas de bases de datos utilizando la sintaxis PHP, y no necesitan escribir ni 	conocer SQL para actualizar o modificar bases de datos. 
+
+    • Arquitectura Laravel MVC
+      Laravel es un marco PHP basado en MVC que garantiza una estrecha separación entre las capas de presentación y la lógica empresarial. Al estar basado en MVC, el marco proporciona muchas características como alto rendimiento, mayor seguridad y escalabilidad. 
+      
+    • Código abierto y una gran comunidad  
+      Aunque muchos frameworks PHP vienen con una etiqueta de precio, Laravel es un marco de código abierto para desarrolladores web. Además, tiene una comunidad poderosa que respalda el marco para hacerlo más avanzado y flexible. 
+      
+    • Bibliotecas orientadas a objetos 
+      El framework PHP de Laravel está repleto de muchas bibliotecas integradas orientadas a objetos que están llenas de características sorprendentes para los desarrolladores. 
+      Junto con estas fantásticas características del marco de Laravel, varias razones hacen que las organizaciones estén listas para seguir adelante con los servicios de desarrollo de Laravel. Estas mismas razones, o más bien los beneficios de Laravel Framework, se enumeran a continuación. 
+
+Para comunicar el Back-end con el Front-End he usado una API Rest tambien conocida como RESTful API
+es una interfaz de programación de aplicaciones (API o API web) que se ajusta a las limitaciones del estilo REST y permite la interacción con los servicios web RESTful. REST significa transferencia de estado representacional y fue creado por el científico informático Roy Fielding. 
+
+¿Qué es una API? 
+
+Una API es un conjunto de definiciones y protocolos para crear e integrar una aplicación de software. 
+A veces tiene la apariencia de una relación entre un proveedor de información y un usuario de información, que establece el contenido requerido por el consumidor (la llamada) y el contenido requerido por el productor (la respuesta). 
+Para interactuar con una computadora o sistema para recuperar información o realizar una función, una API ayuda a comunicar lo necesario a ese sistema para que pueda comprender y cumplir la solicitud. 
+
+Una API puede verse como un mediador entre los usuarios o clientes y los recursos o servicios web que desean obtener. También es una forma de que una organización comparta recursos e información mientras mantiene la seguridad, el control y la autenticación, lo que determina quién tiene acceso a qué. 
+Otra ventaja de una API es que no es necesario que conozca los detalles del almacenamiento en caché: cómo se recupera su recurso o de dónde proviene. 
+
+REST es un conjunto de restricciones arquitectónicas, no un protocolo ni un estándar. Los desarrolladores de API pueden implementar REST de diversas formas. Cuando una solicitud de cliente se realiza a través de una API RESTful, transfiere una representación del estado del recurso al solicitante o al punto final. Esta información, o representación, se entrega en uno de varios formatos a través de HTTP: JSON (Notación de Objetos Javascript), HTML, XLT, Python, PHP o texto sin formato. 
+
+JSON es el formato de archivo más popular en general porque, a pesar de su nombre, es independiente del idioma y es legible tanto por humanos como por máquinas. Algo más a tener en cuenta: los encabezados y los parámetros también son importantes en los métodos HTTP de una solicitud HTTP de la API RESTful, ya que contienen información de identificación importante en cuanto a los metadatos de la solicitud, la autorización, el identificador uniforme de recursos (URI), el almacenamiento en caché, las cookies y más.
+Hay encabezados de solicitud y encabezados de respuesta, cada uno con su propia información de conexión HTTP y códigos de estado. 
+
+Para que una API se considere RESTful, debe cumplir con estos criterios: 
+    • Una arquitectura cliente-servidor compuesta por clientes, servidores y recursos, con solicitudes gestionadas a través de HTTP. 
+    • Comunicación cliente-servidor sin estado, lo que significa que no se almacena información del cliente entre las solicitudes de obtención y cada solicitud es independiente y no está conectada. 
+    • Datos almacenables en caché que agilizan las interacciones cliente-servidor. Una interfaz uniforme entre componentes para que la información se transfiera de forma estándar. 
+
+Como bases de datos hemos usado MySQL desde PHPmyadmin
+
+MySQL es un sistema de administración de bases de datos relacionales, lo que significa que almacena registros en tablas múltiples, separadas y altamente codificadas en lugar de un solo repositorio. Fue desarrollado por primera vez por una empresa sueca, MySQL AB, a mediados de la década de 1990 y su popularidad creció rápidamente después de que se convirtió en código abierto en 2000. Más tarde, Sun Microsystems compró MySQL AB, que a su vez fue adquirida por el gigante tecnológico estadounidense. Oracle en 2010. 
+Hoy, MySQL es la segunda solución de bases de datos relacionales del mundo, según DB Engines. Sus usuarios incluyen una amplia gama de sitios web y aplicaciones, incluidas marcas domésticas como Spotify, Netflix, Facebook y Booking.com. 
+
+Beneficios de MySQL
+    • MySQL se desarrolló para brindar velocidad y mantiene la reputación de ser rápido, incluso si esto ocurre a expensas de algunas características adicionales. También es conocido por su confiabilidad, respaldado por una gran comunidad de programadores que han sometido el código a duras pruebas a lo largo de los años. Otro beneficio es que es relativamente simple de aprender y usar, y dado que ha existido durante casi tres décadas, no es difícil encontrar desarrolladores de MySQL experimentados cuando los necesita. 
+
+    • Seguridad: esta es siempre una consideración importante para las empresas, ya que necesitan proteger los datos confidenciales y defenderse de los ciberataques. MySQL ofrece cifrado mediante el protocolo Secure Sockets Layer (SSL), enmascaramiento de datos, complementos de autenticación y otras capas de seguridad para proteger la integridad de los datos. El paquete Enterprise también incluye protección por firewall contra ciberataques. 
+
+    • Escalabilidad: a medida que aumentan los volúmenes de datos y las cargas de usuarios, la base de datos debe ampliarse para hacer frente a la carga de trabajo adicional sin una caída en el rendimiento. MySQL se puede escalar de diferentes formas, normalmente mediante replicación, agrupamiento o fragmentación (o una combinación de ellos). Es capaz de admitir y procesar bases de datos muy grandes, aunque es probable que esto tenga un impacto en la velocidad. 
+	b) Materiales y métodos
+
+Tecnologías previstas para su implementación 
+
+Elegiremos una solución centrada en tecnología web responsive que permita adaptarme al máximo número de dispositivos limitando el tiempo de desarrollo. Nota bibliográfica
+
+Escogeré una arquitectura Cliente-Servidor usando el patrón Modelo-Vista-Controlador. Desarrollaré el frontend empleando tecnologías web habituales (HTML5, CSS3, JavaScript), aprovechando los frameworks de React y Bootstrap 4. Usaré React por ser el framework más utilizado en el sector empresarial, así como para poder aprovechar la experiencia adquirida en su desarrollo en mis prácticas actuales. 
+
+Emplearé la penúltima versión de Bootstrap, la 4, para los estilos CSS, por ser la versión con mayor soporte en cuanto a la comunidad y los manuales. En cuanto al backend, construiré una aplicación PHP con el framework Laravel, para aprovechar la experiencia adquirida durante mi formación.
+Como servidor web emplearé Apache, el servidor más usado y con el que ya he trabajado
+durante el grado.
+
+Así mismo, como almacén de datos aprovecharé el servidor SQL de MySQL.
+Planeo ejecutar el backend PHP y el servidor MySQL sobre un sistema Linux, Ubuntu
+20.04.
+En cuanto a las tecnologías para el desarrollo:
+- Emplearé Visual Studio Code y su gran repertorio de plugins para escribir el código
+en los diferentes lenguajes, interactuar con los repositorios git y acceder a los
+diferentes terminales.
+- Usaré varios repositorios privados en GitHub para realizar el control de versiones
+con Git de las diferentes partes del proyecto.
+- Emplearé VirtualBox para ejecutar una máquina virtual de Ubuntu 20.04 con la que
+realizar el desarrollo del backend. 
+
+ 
+	
+
+
+
+
+
+
+c) Resultados y análisis
+
+Tutorial de bootstrap
+tutorial de reactive
+tutorial de laravel
+ 
+
+	
+	d) Conclusiones
+Que características he logrado implementar
+Cuales no he podido
+Los botones colapsables eran una propiedad de bootstrap que no tenia una apropiada transición a bootstrap
+Cuales he decidido dejar fuera por complejidad
+
+	e) Lineas de investigación futuras
+
+    • Pago por PayPal usando su API
+    • Generación y lectura de códigos de barras
+    • Generación y lectura de códigos Qr
+    • Seguimiento gps de la ruta 
+    • Organización de rutas óptimas de reparto
+
+
+6. Bibliografía
+
+React JS Crash Course 2021
+https://www.youtube.com/watch?v=w7ejDZ8SWv8sadf
+asdf
+En este proyecto vamos a desarrollar una plataforma web que realice la operativa de una empresa nacional de paquetería y transporte. Por la naturaleza del sector, esta página debe ser un punto de acceso común a todos los potenciales usuarios de CONTOSOX. Por eso aunque dará servicio a múltiples pequeñas empresas nos centraremos solo en una. 
+Su uso está pensado para el cliente final  y para las pequeñas empresas de transporte locales franquiciadas de la empresa matriz.
+Es importante recalcar que existe una dependencia logística con la empresa madre que no vamos a poder resolver en este proyecto por falta de datos, conocimiento y tiempo
+¿Que nos ofrece la nueva aplicación?
+Como clientes, vamos a poder hacer envíos y comprobar en que estado está nuestro paquete.
+
+Como franquiciados, agilizaremos los procesos productivos de la empresa. Recogidas y entregas van a poder quedar registradas y actualizadas en tiempo real. 
+Como empleados vamos a poder asignar los paquetes que vamos a repartir y tendremos acceso instantáneo a toda la lista de paquetes.
+
+En este trabajo hemos trabajado con react con javascript 
+
+
+
+
